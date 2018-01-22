@@ -17,7 +17,7 @@ public class HelloWorldController {
     @RequestMapping("/")
     @ResponseBody
     String home(){
-        return "hello world  1";
+        return "hello world  2";
     }
 
 }
