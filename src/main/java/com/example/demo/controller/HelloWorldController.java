@@ -17,7 +17,7 @@ public class HelloWorldController {
 
     @GetMapping()
     String home() {
-        return "index.htm;";
+        return "index.htm";
     }
 
 }
