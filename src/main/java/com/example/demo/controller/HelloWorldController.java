@@ -2,22 +2,22 @@ package com.example.demo.controller;
 
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  * Created by wangjianfeng on 2017/12/26.
- *
  */
 
-@Controller
-@EnableAutoConfiguration
+@RestController
+@RequestMapping("/")
 public class HelloWorldController {
 
-    @RequestMapping("/")
-    @ResponseBody
-    String home(){
-        return "hello world  5";
+    @GetMapping()
+    String home() {
+        return "index.htm;";
     }
 
 }
