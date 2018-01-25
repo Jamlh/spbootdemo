@@ -1,19 +1,19 @@
 package com.example.demo.controller;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 /**
  * Created by wangjianfeng on 2017/12/26.
  */
 
-@RestController
+@Controller
 @RequestMapping("/")
 public class HelloWorldController {
 
     @GetMapping()
-    String home() {
+    String helloWorld() {
         return "index";
     }
 
